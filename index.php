@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatilbe" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link type="text/css" href="assets/styles.css">
     <title>Dicey Times</title>
 </head>
 
 <body>
-    <h1>Roll the Dice and See Who Wins</h1>
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Roll the Dice and See Who Wins</h1>
+        </div>
+    </header>
     <div>
         <form id="activ_dice" action="functions.php">
             <label for="diceSize_ID">How many faces have you dice?</label>
@@ -24,6 +30,7 @@
             <a href="#" onclick="document.getElementById('activ_dice').submit()">Roll the Dice</a>
         </form>
     </div>
+    <script src="assets\js\bootstrap.bundle.js"></script>
 </body>
 
 </html>
