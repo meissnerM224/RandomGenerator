@@ -3,7 +3,7 @@
 error_reporting(-1);
 ini_set('display-errors', 'On');
 
-function rollDivce(int $size,int $number ){
+function rollDice(int $size,int $number ){
     $max = $size;
     $list = array();
     for($i = 0; $i < $number; $i++){
@@ -20,5 +20,5 @@ print_r(' ');
 $size = array_pop($_REQUEST);
 print_r($size);
 print_r(' ');
- 
-var_dump( rollDivce( intval($size),intval($number)));
+ print_r(rollDice($size, $number));
+// var_dump( rollDice( intval($size),intval($number)));
