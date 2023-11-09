@@ -11,7 +11,7 @@
     <body class="bg-success.bg p-2" style="--bs-bg-opacity: .5;">
         <?php include 'header.php'?>
         <?php include 'input_section.php'?> 
-        
+        <div id="results"></div>
         <script src="assets\js\bootstrap.bundle.js"></script>
     </body>
 </html>

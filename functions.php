@@ -1,20 +1,30 @@
 
-<<?php 
+<?php 
 error_reporting(-1);
 ini_set('display-errors', 'On');
 
-function rollDice(int $size,int $tries ){
-    $max = $size;
+function rollDice(int $maxSize,int $tries ){
+$results = [];
     for($i = 0; $i < $tries; $i++){
-        $result[]=mt_rand(1, $max);
+        $results[] = mt_rand(1, $maxSize);
     }
-    return $result;
+
+    return $results;
 }
-if($_REQUEST['REQUEST METHOD']=== 'GET')
-$input = array($_REQUEST);
-$number = array_pop($_REQUEST);
-$size = array_pop($_REQUEST);
-print_r(rollDice($size, $number));
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+
+    $tries = $_REQUEST['howManyDice'];
+    $size = $_REQUEST['diceSize'];
+    $results = (rollDice($size, $tries));
+
+    echo '<p>Your results:</p>';
+    echo '<ul>';
+    foreach ($results as $result){
+        echo '<li>' .':  ' . $result . '</li>';
+    }
+    echo '</ul>';
+}
 // print_r($number);
 // print_r(' ');
 // print_r($size);

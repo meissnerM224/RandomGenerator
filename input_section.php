@@ -4,7 +4,7 @@
             <div class ="col">
                 <div class="card">
                     <div class="card-body">
-                        <label for="diceSize_ID">How many faces?</label>
+                        <label for="diceSize_ID" class="justify-content">How many faces?</label>
                         <br>
                         <input type="text" class="form-control" id="diceSize_ID" name="diceSize">
                     </div>
@@ -15,7 +15,7 @@
                     <div class ="card-body">
                         <label for="dicetryes_ID">how often to roll the throw?</label>
                         <br>
-                        <input type="text" class="form-control" id="dicetryes_ID" name="diceNum"> 
+                        <input type="text" class="form-control" id="dicetryes_ID" name="howManyDice"> 
                     </div>
                 </div>
             </div>
