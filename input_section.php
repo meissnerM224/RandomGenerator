@@ -1,5 +1,5 @@
 <section class="container" id="products">
-    <form id="activ_dice" action="functions.php">
+    <form id="activ_dice" >
         <div class="row">
             <div class ="col">
                 <div class="card">

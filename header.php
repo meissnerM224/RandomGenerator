@@ -5,5 +5,5 @@
         </div>
     </header>
     <div class="container alert alert-info">
-        <h3 class="fst-italic text-center"> Glory Dice, try it and see what the fade will have for you</h3>
+            <h3 class="fst-italic text-center"> Glory Dice, try it and see what the fate will have for you</h3>
     </div>
