@@ -8,4 +8,3 @@
         <script src="assets\js\bootstrap.bundle.js"></script>
     </body>
 </html>
-    <!-- <a href="#" class="btn btn-primary" onclick="document.getElementById('activ_dice').submit()">Roll the Dice</a> --> 

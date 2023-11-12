@@ -7,10 +7,10 @@ function rollDice($maxSize = 6, $tries = 1)  {
     print_r($maxSize);
     print_r($tries);
     if(empty($tries)){
-        $tries = 2;
+        $tries = 1;
     }
     if(empty($maxSize)){
-        $maxSize = 2;
+        $maxSize = 6;
     }
 $results = [];
     for($i = 0; $i < $tries; $i++){
@@ -34,14 +34,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     echo '</ul>';
     echo '</div>';
-    echo "<script>alert(" .  $value . ")</script>";
 }
-// print_r($number);
-// print_r(' ');
-// print_r($size);
-// print_r(' ');
-// $list = array();
-// $ramdom = mt_rand(1,$max);
-// array_push($list, $ramdom);
-// print_r($ramdom);
-// var_dump( rollDice( intval($size),intval($number)));
